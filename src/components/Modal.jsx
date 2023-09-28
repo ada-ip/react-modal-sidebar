@@ -8,7 +8,9 @@ const Modal = () => {
 		<div className={`modal-ext-container${isModalOpen ? "" : " hidden"}`}>
 			<div className="modal-container">
 				<h3 className="modal-title">Modal Content</h3>
-				<FaTimes className="close-modal-btn" onClick={closeModal} />
+				<button type="button" className="close-btn close-modal-btn" onClick={closeModal}>
+					<FaTimes />
+				</button>
 			</div>
 		</div>
 	);

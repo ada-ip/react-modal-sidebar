@@ -11,6 +11,7 @@
 	--accent-color: #49a6e9;
 	--white-color: #ffffff;
 	--text-color: #0f172a;
+	--light-text-color: #334155;
 	--danger: #842029;
 }
 
@@ -22,10 +23,6 @@
 	font-family: "Roboto", sans-serif;
 	display: grid;
 	place-items: center;
-}
-
-header {
-	position: fixed;
 }
 
 .navbar {
@@ -83,17 +80,74 @@ header {
 	font-size: 1.7rem;
 }
 
+.close-btn {
+	background-color: var(--white-color);
+	border: none;
+	color: var(--danger);
+	font-size: 1.7rem;
+	cursor: pointer;
+}
+
 .close-modal-btn {
 	position: absolute;
 	top: 1.5rem;
 	right: 1.5rem;
-	color: var(--danger);
-	font-size: 1.7rem;
-	cursor: pointer;
 }
 
 .hidden {
 	visibility: hidden;
 	opacity: 0;
 	transition: all 0.5s;
+}
+
+.sidebar {
+	position: absolute;
+	inset: 0;
+	width: min(100%, 400px);
+	background-color: var(--white-color);
+	color: var(--light-text-color);
+}
+
+.sidebar-header {
+	padding: 1rem 1.5rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.sidebar-close-btn {
+	position: relative;
+	top: 4px;
+}
+
+.sidebar-links {
+	padding-top: 1.6rem;
+	list-style: none;
+}
+
+.sidebar-link {
+	display: inline-block;
+	padding: 0.5em 1.5em;
+	text-decoration: none;
+	color: var(--light-text-color);
+	text-transform: capitalize;
+	font-size: 1.2rem;
+	display: flex;
+	gap: 1em;
+}
+
+.sidebar-submenu {
+	position: absolute;
+	inset: auto 0 0 0;
+	padding-bottom: 1.5rem;
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 1rem;
+}
+
+.sidebar-submenu-link {
+	color: var(--accent-color);
+	font-size: 1.5rem;
 }
