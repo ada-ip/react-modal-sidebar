@@ -63,6 +63,8 @@ header {
 	background-color: rgba(0, 0, 0, 0.5);
 	display: grid;
 	place-items: center;
+	opacity: 1;
+	transition: opacity 0.5s;
 }
 
 .modal-container {
@@ -88,4 +90,10 @@ header {
 	color: var(--danger);
 	font-size: 1.7rem;
 	cursor: pointer;
+}
+
+.hidden {
+	visibility: hidden;
+	opacity: 0;
+	transition: all 0.5s;
 }
