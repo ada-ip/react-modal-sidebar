@@ -1,5 +1,5 @@
 import { FaTimes } from "react-icons/fa";
-import { useGlobalContext } from "../context";
+import { useGlobalContext } from "../../context";
 
 const SidebarHeader = () => {
 	const { closeSidebar } = useGlobalContext();

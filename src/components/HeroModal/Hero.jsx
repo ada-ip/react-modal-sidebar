@@ -1,4 +1,4 @@
-import { useGlobalContext } from "../context";
+import { useGlobalContext } from "../../context";
 import Modal from "./Modal";
 
 const Hero = () => {
