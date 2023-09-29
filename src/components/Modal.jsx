@@ -5,7 +5,7 @@ const Modal = () => {
 	const { closeModal, isModalOpen } = useGlobalContext();
 
 	return (
-		<div className={`modal-ext-container${isModalOpen ? "" : " hidden"}`}>
+		<div className={`modal-ext-container${isModalOpen ? "" : " modal-hidden"}`}>
 			<div className="modal-container">
 				<h3 className="modal-title">Modal Content</h3>
 				<button type="button" className="close-btn close-modal-btn" onClick={closeModal}>

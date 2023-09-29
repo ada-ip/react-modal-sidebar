@@ -94,7 +94,7 @@
 	right: 1.5rem;
 }
 
-.hidden {
+.modal-hidden {
 	visibility: hidden;
 	opacity: 0;
 	transition: all 0.5s;
@@ -106,6 +106,7 @@
 	width: min(100%, 400px);
 	background-color: var(--white-color);
 	color: var(--light-text-color);
+	transition: left 1.5s;
 }
 
 .sidebar-header {
@@ -150,4 +151,9 @@
 .sidebar-submenu-link {
 	color: var(--accent-color);
 	font-size: 1.5rem;
+}
+
+.sidebar-hidden {
+	left: -100%;
+	transition: all 3s;
 }
