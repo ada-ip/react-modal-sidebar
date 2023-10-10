@@ -19,7 +19,7 @@ and navigation features.
 
 ## Deployment
 
-The app is deployed and can be accessed at [/](/).
+The app is deployed and can be accessed at [react-modal-sidebar-context.netlify.app](https://react-modal-sidebar-context.netlify.app/).
 
 ## Author
 
